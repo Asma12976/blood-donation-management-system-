@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+.main-nav {
+    background-color: #333; /* Dark background color */
+    padding: 10px 0; /* Adjust vertical padding */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-content {        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    width: auto;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .contact-icon {
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center; /* Changed from flex-start to center */
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+}
+
+.logo .brand-name {
+    font-size: 1.5em; /* Optional: Adjust font size */
+    font-weight: bold; /* Makes the text bold */
+    color:black; /* Change this to your desired color */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.nav-links a:hover {
+color: red; /* Change text color to red */
+}
+
+.login-button {
+background-color: black; /* Black background */
+color: white; /* White text */
+padding: 6px 10px; /* Reduced padding for a smaller button */
+margin-top: -10px; /* Adjust the vertical margin to move the button up */
+border: none; /* Remove border */
+border-radius: 5px; /* Rounded corners */
+cursor: pointer; /* Change cursor to pointer on hover */
+font-weight: bold; /* Bold text */
+text-transform: uppercase; /* Make text uppercase */
+font-size: 0.9em;
+}
+
+/* Style when hovering over the Login Button */
+.login-button:hover {
+background-color: #333; /* Darker shade of black */
+}
+
+
+.hero-section {
+    background-image: url('images/banner1.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.hero-content {
+    width: 80%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    background-color: #c2185b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: #e62e32;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+.doctor-section {
+    background-color: #4287f5; /* Blue background */
+    color: white;
+    padding: 50px 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.doctor-content {
+    display: flex;
+    align-items: center; /* Aligns content vertically in the middle */
+    gap: 30px; /* Adds space between image and text */
+}
+
+.doctor-image img {
+    height: 200px; /* Increased the height to 400px, adjust as needed */
+    width: auto; /* Ensures the image maintains its aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+.doctor-text {
+    max-width: 600px; /* Optional: Restricts the text width for better readability */
+}
+
+.doctor-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.doctor-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.doctor-section .read-more {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.doctor-section .read-more:hover {
+    background-color: white;
+    color: #4287f5;
+}
+
+.donor-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('images/bg4.jpg'); /* Corrected the path */
+    background-size: cover; /* Ensure it covers the section */
+    background-position: center; /* Ensure it is centered */
+    background-repeat: no-repeat; /* Ensure it does not repeat */
+    color: #333; /* Adjust text color for visibility */
+}
+
+.donor-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white; /* Changed the color to white */
+}
+
+.donor-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows cards to wrap into multiple lines */
+    gap: 20px; /* Adds space between the cards */
+    margin-top: 20px; /* Optional: Adds some spacing at the top */
+}
+
+.donor-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 20%; /* Ensures 3 cards per row */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Ensures there's space between rows */
+}
+
+@media (max-width: 768px) {
+    .donor-cards {
+        flex-direction: column;
+        align-items: center; /* Centers the cards on small screens */
+    }
+
+    .donor-card {
+        width: 80%; /* Adjust width on smaller screens */
+    }
+}
+
+.donor-card img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.donor-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.donor-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.donor-card .request-button {
+    background-color:rgb(11, 8, 9);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.blood-groups-section {
+background-color: white;
+padding: 40px 20px;
+text-align: left;
+}
+
+.blood-groups-content {
+width: 80%;
+margin: 0 auto;
+display: flex;
+align-items: flex-start;
+}
+
+.blood-groups-text {
+flex: 1;
+}
+
+.blood-groups-image {
+flex: 1;
+text-align: right;
+}
+
+.blood-groups-image img {
+    max-width: 100%; /* You can adjust this value to a specific percentage if needed */
+    height: 300px; /* Set the height as per your requirement */
+    width: auto; /* Ensures the image maintains its aspect ratio */
+}
+
+
+.blood-groups-content h2 {
+font-size: 2em;
+margin-bottom: 20px;
+text-align: center; /* Center the title */
+width: 100%; /* Ensure the title takes up the full width */
+}
+
+.blood-groups-content ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+
+.blood-groups-content li {
+font-size: 1em;
+line-height: 1.6;
+}
+
+
+.universal-donors-section {
+background-color:white;
+padding: 10px 20px;
+display: flex;
+justify-content: center; /* Centers content horizontally */
+align-items: center; /* Centers content vertically */
+height: 200px; /* Adjust height as needed */
+}
+
+.universal-donors-content {
+text-align: center; /* Centers the text inside the content */
+}
+
+.universal-donors-content h2 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+
+.universal-donors-content p {
+font-size: 1em;
+line-height: 1.6;
+}
+
+.universal-donors-content .become-donor-button {
+background-color: black;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 20px;
+}
+
+/* Footer Section Styling */
+footer {
+background-color: #4b6584;
+color: white;
+padding: 30px 0;
+text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Footer Logo */
+.footer-logo img {
+height: 50px;
+margin-bottom: 20px;
+}
+
+.footer-logo h3 {
+margin: 0;
+font-size: 1.8em;
+}
+
+
+/* Footer Links */
+.footer-links {
+margin-bottom: 20px;
+}
+.footer-links {
+margin: 5px 0;
+}
+
+.footer-links a {
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-size: 1.1em;
+}
+
+.footer-links a:hover {
+color: #f1c40f;
+}
+
+/* Footer Contact Info */
+.footer-contact {
+margin-bottom: 20px;
+}
+
+.footer-contact p {
+margin: 5px 0;
+}
+
+/* Footer Social Media */
+.footer-social {
+margin-bottom: 20px;
+}
+
+.footer-social a {
+color: white;
+margin: 0 10px;
+}
+
+.footer-social a img {
+height: 25px;
+transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom p {
+font-size: 0.9em;
+margin: 0;
+}
